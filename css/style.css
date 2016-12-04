@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+    font-weight: 400;
+}
+
+/*Header style*/
+header h1 {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+header h4 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/*Divider style*/
+hr {
+    border-width: 4px;
+    border-top-color: #7d97ad;
+}
+
+/*Main content style*/
+
+/*Featured work*/
+.featured-work {
+    color: #7d97ad;
+}
+
+a.text-link {
+    text-decoration: none;
+    color: #2d3c49;
+    cursor: pointer;
+}
+
+h3.footer {
+    color: #2d3c49;
+}
+
+h3.footer:hover {
+    color: #7d97ad;
+}
