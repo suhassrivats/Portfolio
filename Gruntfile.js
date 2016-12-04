@@ -78,6 +78,24 @@ module.exports = function(grunt) {
                 }]
             }
         },
+
+        // Watch and make changes on the go
+        watch: {
+            scripts: {
+                files: ['**/*.css'],
+                tasks: ['cssmin'],
+                options: {
+                    spawn: false,
+                },
+            },
+            // images: {
+            //     files: ['image_src/*.{png,jpg,gif}'],
+            //     tasks: ['imagemin:compress', 'responsive_images'],
+            //     options: {
+            //         spawn: false,
+            //     }
+            // },
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -85,6 +103,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-mkdir');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['cssmin', 'clean', 'mkdir', 'imagemin', 'responsive_images']);
+    grunt.registerTask('default', ['cssmin', 'clean', 'mkdir', 'imagemin', 'responsive_images', 'watch']);
 };

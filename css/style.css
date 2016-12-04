@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #2d3c49;
     font-weight: 400;
 }
@@ -22,22 +22,21 @@ hr {
 }
 
 /*Main content style*/
-
-/*Featured work*/
 .featured-work {
     color: #7d97ad;
+    margin-left: 1em;
 }
 
-a.text-link {
-    text-decoration: none;
+.project-link {
+    text-decoration: none !important;
     color: #2d3c49;
     cursor: pointer;
 }
 
-h3.footer {
+.project-name {
     color: #2d3c49;
 }
 
-h3.footer:hover {
+.project-name:hover {
     color: #7d97ad;
 }
